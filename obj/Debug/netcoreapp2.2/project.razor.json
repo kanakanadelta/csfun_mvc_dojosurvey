@@ -2959,6 +2959,17 @@
     "CSharpLanguageVersion": 800
   },
   "RootNamespace": "DojoSurvey",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "Views/Home/Result.cshtml",
+      "TargetPath": "Views/Home/Result.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Views/Home/index.cshtml",
+      "TargetPath": "Views/Home/index.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }

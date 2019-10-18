@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    #form_div {
+      border: 1.5px solid #000;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dojo Survey Index</title>
+</head>
+<body>
+  <div id="form_div">
+    <form action="survey" method="post">
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              <label for="Name">Your Name: </label>
+            </td>
+            <td>
+              <input type="text" name="Name"/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="Location">Dojo Location: </label>
+            </td>
+            <td>
+              <select name="Location">
+                  <option value="San Jose">San Jose</option>
+                  <option value="Burbank">Burbank</option>
+                  <option value="Orange County">Orange County</option>
+                  <option value="New York">New York</option>
+                </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="Language">Favorite Language:</label>
+            </td>
+            <td>
+              <select name="Language">
+                  <option value="Python">Python</option>
+                  <option value="Java">Java</option>
+                  <option value="MEAN">MEAN</option>
+                  <option value="CSharp">C#</option>
+                </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="Comment">Comment (optional): </label>
+            </td>
+            <td>
+              <textarea name="Comment" id="Comment" cols="20" rows="4"></textarea>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

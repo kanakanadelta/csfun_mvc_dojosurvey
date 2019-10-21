@@ -22,13 +22,18 @@
         <tbody>
           <tr>
             <td>
-              <span asp-validation-for="Name"></span>
               <label asp-for="Name"></label>
               <!-- <label for="Name">Your Name: </label> -->
             </td>
             <td>
               <input asp-for="Name"/>
               <!-- <input type="text" name="Name"/> -->
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+                <span style="color:red;" asp-validation-for="Name"></span>
             </td>
           </tr>
           <tr>

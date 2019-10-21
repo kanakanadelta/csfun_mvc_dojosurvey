@@ -20,7 +20,20 @@ namespace DojoSurvey.Controllers
         [HttpPost("survey")]
         public IActionResult SurveySubmit(Survey surveyData)
         {
-            return RedirectToAction("Result", surveyData);
+            // old 
+            // return RedirectToAction("Result", surveyData);
+
+            // UPDATE //
+            // Model Validation variation:
+
+            if(ModelState.IsValid)
+            {
+                return RedirectToAction("Result", surveyData);
+            }
+            else
+            {
+                return View("Index");
+            }
         }
     }
 }

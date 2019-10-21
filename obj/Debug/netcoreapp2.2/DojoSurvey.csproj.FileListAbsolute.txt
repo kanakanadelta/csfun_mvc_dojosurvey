@@ -18,7 +18,8 @@
 /Users/rtongson/Documents/csharp/mvcfun/DojoSurvey/obj/Debug/netcoreapp2.2/DojoSurvey.TagHelpers.output.cache
 /Users/rtongson/Documents/csharp/mvcfun/DojoSurvey/obj/Debug/netcoreapp2.2/DojoSurvey.RazorCoreGenerate.cache
 /Users/rtongson/Documents/csharp/mvcfun/DojoSurvey/obj/Debug/netcoreapp2.2/Razor/Views/Home/index.g.cshtml.cs
-/Users/rtongson/Documents/csharp/mvcfun/DojoSurvey/obj/Debug/netcoreapp2.2/Razor/Views/Home/show.g.cshtml.cs
 /Users/rtongson/Documents/csharp/mvcfun/DojoSurvey/obj/Debug/netcoreapp2.2/DojoSurvey.RazorTargetAssemblyInfo.cs
 /Users/rtongson/Documents/csharp/mvcfun/DojoSurvey/obj/Debug/netcoreapp2.2/DojoSurvey.Views.pdb
 /Users/rtongson/Documents/csharp/mvcfun/DojoSurvey/obj/Debug/netcoreapp2.2/DojoSurvey.csproj.CopyComplete
+/Users/rtongson/Documents/csharp/mvcfun/DojoSurvey/obj/Debug/netcoreapp2.2/Razor/Views/Home/Result.g.cshtml.cs
+/Users/rtongson/Documents/csharp/mvcfun/DojoSurvey/obj/Debug/netcoreapp2.2/Razor/Views/_ViewImports.g.cshtml.cs

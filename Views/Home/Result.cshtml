@@ -1,3 +1,6 @@
+@using DojoSurvey.Models;
+@model Survey;
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +15,7 @@
   <title>Dojo Surey Result</title>
 </head>
 <body>
+  <h1>Survey Results:</h1>
   <div id="form_div">
     <table>
       <tbody>
@@ -20,7 +24,7 @@
             Name: 
           </td>
           <td>
-            @ViewBag.Name
+            @Model.Name
           </td>
         </tr>
         <tr>
@@ -28,7 +32,7 @@
             Dojo Location: 
           </td>
           <td>
-            @ViewBag.Location
+            @Model.Location
           </td>
         </tr>
         <tr>
@@ -36,7 +40,7 @@
             Favorite Language: 
           </td>
           <td>
-            @ViewBag.Language
+            @Model.Language
           </td>
         </tr>
         <tr>
@@ -44,7 +48,7 @@
             Comment: 
           </td>
           <td>
-            @ViewBag.Comment
+            @Model.Comment
           </td>
         </tr>
       </tbody>

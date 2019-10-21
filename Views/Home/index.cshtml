@@ -13,23 +13,33 @@
 </head>
 <body>
   <div id="form_div">
-    <form action="survey" method="post">
+    <!-- UPDATED for Model Validation -->
+    @model Survey
+    <!-- <form action="survey" method="post"> -->
+      <!-- asp-action matches the method name in the HomeController -->
+      <form asp-action="SurveySubmit" asp-controller="Home" method="POST">
       <table>
         <tbody>
           <tr>
             <td>
-              <label for="Name">Your Name: </label>
+              <span asp-validation-for="Name"></span>
+              <label asp-for="Name"></label>
+              <!-- <label for="Name">Your Name: </label> -->
             </td>
             <td>
-              <input type="text" name="Name"/>
+              <input asp-for="Name"/>
+              <!-- <input type="text" name="Name"/> -->
             </td>
           </tr>
           <tr>
             <td>
-              <label for="Location">Dojo Location: </label>
+              <span asp-validation-for="Location"></span>
+              <label asp-for="Location"></label>
+              <!-- <label for="Location">Dojo Location: </label> -->
             </td>
             <td>
-              <select name="Location">
+              <!-- <select name="Location"> -->
+              <select asp-for="Location">
                   <option value="San Jose">San Jose</option>
                   <option value="Burbank">Burbank</option>
                   <option value="Orange County">Orange County</option>
@@ -39,10 +49,13 @@
           </tr>
           <tr>
             <td>
-              <label for="Language">Favorite Language:</label>
+              <span asp-validation-for="Language"></span>
+              <label asp-for="Language"></label>
+              <!-- <label for="Language">Favorite Language:</label> -->
             </td>
             <td>
-              <select name="Language">
+              <!-- <select name="Language"> -->
+              <select asp-for="Language">
                   <option value="Python">Python</option>
                   <option value="Java">Java</option>
                   <option value="MEAN">MEAN</option>
@@ -52,17 +65,21 @@
           </tr>
           <tr>
             <td>
-              <label for="Comment">Comment (optional): </label>
+              <span asp-validation-for="Comment"></span>
+              <label asp-for="Comment"></label>
+              <!-- <label for="Comment">Comment (optional): </label> -->
             </td>
             <td>
-              <textarea name="Comment" id="Comment" cols="20" rows="4"></textarea>
+              <textarea asp-for="Comment" id="Comment" cols="20" rows="4"></textarea>
+              <!-- <textarea name="Comment" id="Comment" cols="20" rows="4"></textarea> -->
             </td>
           </tr>
         </tbody>
       </table>
 
 
-      <button type="submit">Submit</button>
+      <input value="Submit" type="submit" />
+      <!-- <button type="submit">Submit</button> -->
     </form>
   </div>
 </body>
